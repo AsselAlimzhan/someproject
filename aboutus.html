@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  background: white;
+}
+
+
+.header {
+  padding: 10px;
+  background-image:url("https://user-images.githubusercontent.com/5901923/47139414-1272d400-d2bc-11e8-9ac4-d14c660e2376.jpg"); 
+  height: 800px;
+color:white;
+}
+
+.header2 {
+  padding: 10px;
+  background-color: white;
+ 
+  height: 600px;
+}
+
+.header3 {
+  padding: 10px;
+  top:1500px;
+  height: 1400px;
+  background: linear-gradient(0deg, #001122 0%, #015C78 0.01%, #012A38 100%);
+}
+
+
+.topnav {
+  overflow: hidden;
+  color: white;
+  right: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+
+.topnav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  border: 1px solid black;
+  right: 200px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.card {
+  background-color: white;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.side {
+ 
+  position: absolute;
+width: 500px;
+height: 100px;
+left: 120px;
+top: 200px;
+text-transform: uppercase;
+}
+
+.column.middle {
+ position: absolute;
+width: 700px;
+height: 100px;
+right: 120px;
+top: 200px;
+
+}
+.column.middle2 {
+ position: absolute;
+width: 500px;
+height: 300px;
+left: 120px;
+top: 850px;
+
+}
+.column.middle3 {
+ position: absolute;
+right: 120px;
+top: 850px;
+
+}
+
+.column.middle4 {
+ position: absolute;
+width: 1000px;
+height: 500px;
+top: 1100px;
+right: 120px;
+left:120px;
+font-family: Gotham Pro;
+}
+
+.column.middle5 {
+ position: absolute;
+width: 1000px;
+height: 200px;
+top: 1550px;
+right: 120px;
+left:120px;
+font-family: Gotham Pro;
+}
+.warning {background-color: #ff9800;} 
+.warning:hover {background: #e68a00;}
+
+.btn {
+  border: none; 
+  color: white; 
+  padding: 14px 28px; 
+  cursor: pointer; 
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 200px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 250px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="row">
+ <div class="topnav">
+  <a href="#" style="float:right">SP</a>
+ <a href="#" style="float:right">FR</a>
+  <a href="#" style="float:right">EN</a>
+  <a href="#" style="float:right">KZ</a>
+  <a href="#" style="float:right">RU</a>
+  
+
+   <div class="hour" style="
+  color: white;
+  font-size: 40px;
+  left: 150px; ">
+    <p id="demo"></p>
+  </div>
+</div>
+  <div class="column side">
+  
+    <p>Деловая программа</p>
+    <p>Культурная программа</p>
+    <p>Место проведения </p>
+    <p>О Казахстане </p>
+    <p>О столице г.Нур-Султан </p>
+    <p>участникам </p>
+    <p>Медиа </p>
+  </div>
+  
+  <div class="column middle" >
+   <img src="https://www.wto.org/images/img_index/photos/mc12new.jpg" width="700px" height="150px" >
+    <p>Равным образом дальнейшее развитие различных форм деятельности позволяет выполнять важные задания
+    по разработке позиций, занимаемых участниками в отношении поставленных задач. Задача организации,
+    в особенности же укрепление и развитие структуры в значительной степени обуславливает создание существенных финансовых и административных условий.
+    Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.
+    Товарищи! новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации. Товарищи! постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития.</p>
+    
+    <button class="btn warning">Подробнее</button>
+  </div>
+  </div>
+ 
+</div>
+</div>
+
+<div class="header2">
+<div class="row2">
+<div class="word">
+   <div class="column middle2" >
+    <h3> О КОНФЕРЕНЦИИ</h3>
+  <p>18 октября 2018 года в Женеве в ходе заседания Генерального совета членами Всемирной торговой организации единогласно принято решение о проведении 12-й Министерской конференции ВТО (далее – МК-12) 8-11 июня 2020 года в Республике Казахстан г. Нур-Султан. 
+29 октября 2019 г. в рамках визита Министра торговли и интеграции РК Б. Султанова в Женеву состоялось подписание Соглашения между Казахстаном и ВТО о проведении МК-12 ВТО.  Генеральный директор ВТО Р.
+Азеведо подчеркнул, что подписание Соглашения является четким сигналом приверженности Казахстана принципам многосторонней торговой системы и правилам ВТО.</p>
+</div>
+   <div class="column middle3" >
+  <img src="https://www.gov.kz/uploads/2021/5/27/3ff4049f3941452567d1c5c20fe1d4e8_original.1871730.JPG" width="400px" height="250px" >
+</div>
+ <div class="column middle4" >
+  <p>Учитывая опыт в организации крупномасштабных мероприятий, соответствующий статус и материально-техническое обеспечение, поручением Главы Государства (от 21 мая 2019 г.) АО «НК «QazExpoCongress» определена в качестве основного технического исполнителя и оператора бюджета МК-12.
+
+Деловой центр ЭКСПО  - это кластер с единым архитектурным решением, который объединяет в себе деловые, образовательные, конгрессно-выставочные, а также развлекательные проекты в одном комплексе. 
+
+Впервые за время проведения Министерских конференций, мероприятие будет проводиться на территории единого комплекса, где в пешей доступности находятся все объекты конференции, а также в удобных пространствах расположены отель, рестораны и кафе, в том числе Сфера «Нур-Алем», что делает удобным пребывание участников МК-12 на территории Делового центра ЭКСПО. 
+Для проведения МК-12 ВТО определены 4 локации на территории делового центра ЭКСПО: Международный выставочный центр, Конгресс-центр, отель «Хилтон Астана» и МФЦА блок С.4.4. </p>
+</div>
+</div>
+</div>
+</div>
+  <div class="header3">
+<div class="row3">
+<h1 style="transform: rotate(-90deg); left: 0.20px; position: absolute; top: 2000px">NUR-SULTAN</h1>
+ <div class="column middle5" >
+  <h3 style="color:white; "> ПРОГРАММА КОНФЕРЕНЦИИ</h3>
+  <button class="btn warning" >Культурная программа</button>
+  <br>
+  <br>
+  <button class="accordion">Время : 10:30 -12:00 </button>
+  <button class="accordion"> Место проведния : Hilton Astana</button>
+<div class="panel">
+  <p>Учитывая опыт в организации крупномасштабных мероприятий, соответствующий статус и материально-техническое обеспечение, поручением Главы Государства (от 21 мая 2019 г.) АО «НК «QazExpoCongress» определена в качестве основного технического исполнителя и оператора бюджета МК-12. Деловой центр ЭКСПО  - это кластер с единым архитектурным решением, который объединяет в себе деловые, образовательные, конгрессно-выставочные, а также развлекательные проекты в одном комплексе. 
+Впервые за время проведения Министерских конференций, мероприятие будет проводиться на территории единого комплекса, где в пешей доступности находятся все объекты конференции, а также в удобных пространствах расположены отель, рестораны и кафе, в том числе Сфера «Нур-Алем», что делает удобным пребывание участников МК-12 на территории Делового центра ЭКСПО. 
+Для проведения МК-12 ВТО определены 4 локации на территории делового центра ЭКСПО: Международный выставочный центр, Конгресс-центр, отель «Хилтон Астана» и МФЦА блок С.4.4. </p>
+</div>
+
+<button class="accordion">Время : 13:30 -14:45 </button>
+  <button class="accordion"> Место проведния : Конгресс центр</button>
+<div class="panel">
+  <p>Евразийский экономический союз для бизнеса: инвестиционные ожидания, возможности, перспективы
+</p>
+</div>
+<button class="accordion">Время : 11:00 </button>
+  <button class="accordion"> Место проведния : Hilton Astana</button>
+<div class="panel">
+  <p>Неформальная экономика. Цифровые платежи как фактор повышения экономической прозрачности.</p>
+</div>
+<br>
+<br>
+<button class="btn warning" >Вся программа</button>
+<br>
+<br>
+<h3 style="color:white; "> МЕСТА ПРОВЕДЕНИЯ</h3>
+<br>
+<div class="gallery">
+  <a target="_blank">
+    <img src="https://kassir.kz/files/venues/173-KAoPRq5W-1497417697.png" alt="Cinque Terre" width="500" height="800">
+    <div class="centered">Centered</div>
+  </a>
+  
+</div>
+
+<div class="gallery">
+  <a target="_blank" >
+    <img src="https://hotelier.pro/upload/iblock/038/03886946c09014889e8a60eab1c0dc80.jpg" alt="Forest" width="500" height="800">
+  </a>
+  
+</div>
+
+<div class="gallery">
+  <a target="_blank" >
+    <img src="https://tengrinews.kz/userdata/news/2015/news_284246/thumb_m/photo_171402.jpg" alt="Northern Lights" width="500" height="800">
+  </a>
+  
+</div>
+
+<div class="gallery">
+  <a target="_blank" >
+    <img src="https://protoplan.pro/resource/place/5af0074d8bcf6c06e8233b92_979baedeef032fce232a44bf1112bcb0.png" alt="Mountains" width="500" height="800">
+</div>
+  </a>
+ 
+</div>
+  </div>
+  
+</body>
+</html>
+
+<script>
+var countDownDate = new Date("dec 7, 2021 15:37:25").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+ 
+ 
+
+
+
+
